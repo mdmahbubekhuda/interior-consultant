@@ -82,8 +82,8 @@ nav {
     & input {
         position: absolute;
         top: 40px;
-        right: 28px;
-        z-index: 1000;
+        right: 6.5vw;
+        z-index: 10;
         width: 25px;
         height: 25px;
         opacity: 0;
@@ -91,7 +91,8 @@ nav {
 
     & .menu-icon-x {
         font-size: 1.5rem;
-        transform: translate(42px);
+        position: absolute;
+        right: 5vw;
         opacity: 0;
     }
 
@@ -104,7 +105,7 @@ nav {
 /* navigation-end */
 
 /* humburger-menu-start */
-.menu {
+nav {
     & input[type="checkbox"]:checked~ul {
         display: flex;
         flex-direction: column;
@@ -130,6 +131,10 @@ nav {
     & input[type="checkbox"]:checked~.menu-icon-y {
         opacity: 0;
     }
+
+    & input[type="checkbox"]:checked~h3 {
+        opacity: 0;
+    }
 }
 
 /* humberger-menu-end */
@@ -139,7 +144,7 @@ nav {
     nav {
 
         & h3,
-        .menu {
+        ul {
             flex: 1;
         }
 
